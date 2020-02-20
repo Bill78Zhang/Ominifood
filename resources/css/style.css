@@ -17,6 +17,20 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+/* Clearing float */
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* --------------------------------------- */
 /* Reusable Component */
 /* --------------------------------------- */
@@ -107,8 +121,6 @@ h3 {
 
 
 }
-
-
 
 
 .btn:link,
@@ -229,8 +241,6 @@ header {
 .meals-showcase {
     list-style: none;
     width: 100%;
-
-
 }
 
 .meals-showcase li {
@@ -238,17 +248,15 @@ header {
     display: block;
     float: left;
     width: 25%;
-
-
-
 }
 
 .meal-photo {
     width: 100%;
     margin: 0;
     overflow: hidden;
-    background-color: #000;
     /* make sure the image inside the container */
+    background-color: #000;
+
 }
 
 .meal-photo img {
@@ -271,16 +279,59 @@ header {
 /* How it works */
 /* --------------------------------------- */
 
+.section-steps {
+
+    background-color: rgb(224, 220, 220);
+}
 
 .steps-box:first-child {
     text-align: right;
     /* text-align not only work for text, bur also works for any inline block elements,such as img */
+    padding-right: 3%;
+    margin-top: 30px;
+
 }
+
+.steps-box:last-child {
+
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+
+    width: 40%;
+    /* The percentage of the box */
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.works-step div {
+
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    float: left;
+    /* margin-right: 25px; */
+}
+
 .works-step p {
     display: inline-block;
     margin-left: 25px;
     width: 80%;
-  
+
 }
 
 .btn-app img {
@@ -288,4 +339,3 @@ header {
     width: auto;
     margin: 10px;
 }
-
