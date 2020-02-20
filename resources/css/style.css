@@ -271,11 +271,21 @@ header {
 /* How it works */
 /* --------------------------------------- */
 
-.steps-box {
-    margin-top: 30px;
-}
 
 .steps-box:first-child {
     text-align: right;
     /* text-align not only work for text, bur also works for any inline block elements,such as img */
 }
+.works-step p {
+    display: inline-block;
+    margin-left: 25px;
+    width: 80%;
+  
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin: 10px;
+}
+
