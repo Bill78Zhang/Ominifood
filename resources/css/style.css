@@ -115,6 +115,7 @@ h3 {
 
 .icon-big {
     font-size: 350%;
+    /* design the size of the logo */
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
@@ -345,22 +346,68 @@ header {
     height: auto;
 }
 
+/* Section-city */
+
 .city {
 
     width: 20%;
     font-weight: 100;
+    margin-right: 40px;
+
 }
 
 .city figure img {
-    width: 95%;
+    width: 90%;
     height: auto;
+
 
 }
 
 .service {
     margin-top: 25px;
+
 }
 
 .service ul {
     list-style: none;
+    font-weight: 300;
+
+}
+
+.service ul li {
+    padding-bottom: 10px;
+}
+
+.small-icon {
+
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    margin-right: 10px;
+    font-size: 120%;
+    line-height: 120%;
+    text-align: vertical;
+    margin-bottom: -5px;
+
+    /* Using negative margin to align the text and icon */
+
+}
+
+.link:link,
+.link:visited {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    padding: 1px;
+    text-decoration: none;
+    transition: border-bottom 0.2s, color 0.2s;
+    /* Better to add transition when doing hover  */
+}
+
+.link:hover,
+.link:active {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    /* 透明 */
+    color: #555;
 }
