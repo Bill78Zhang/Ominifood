@@ -411,3 +411,41 @@ header {
     /* 透明 */
     color: #555;
 }
+
+/* Comment */
+
+.section-customers {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    /* Make the img cover the section */
+
+}
+
+.section-customers:first-child {
+
+    margin-bottom: 20px;
+}
+
+.comment img {
+    float: left;
+    border-radius: 50%;
+    height: 40px;
+    width: auto;
+    padding-right: 10px;
+}
+
+.comment p {
+    margin-bottom: 20px;
+    font-style: italic;
+
+}
+
+
+.customer-avatar h3 {
+
+    padding-top: 10px;
+    font-size: 80%;
+
+}
