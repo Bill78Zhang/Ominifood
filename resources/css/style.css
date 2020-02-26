@@ -419,7 +419,8 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.703), rgba(0, 0, 0, 0.703)), url(img/back-customers.jpg);
     background-size: cover;
     color: #fff;
-    /* Make the img cover the section */
+    background-attachment: fixed;
+    /* Make the img fixed */
 
 }
 
